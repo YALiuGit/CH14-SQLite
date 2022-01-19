@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m1401_r001"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back03"
+    android:clipChildren="false">
+
+    <TextView
+        android:id="@+id/m1401_t001"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/Yellow"
+        android:gravity="center"
+        android:text="@string/m1401_t001"
+        android:textColor="@color/Fuchsia"
+        android:textSize="@dimen/Headfont"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/m1401_t002"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Aqua"
+        android:gravity="center"
+        android:text="@string/m1401_t002"
+        android:textColor="@color/Teal"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/m1401_t001"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_t001" />
+
+    <TextView
+        android:id="@+id/m1401_t003"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@color/Aqua"
+        android:gravity="center"
+        android:text="@string/m1401_t003"
+        android:textColor="@color/Teal"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_t001" />
+
+    <ImageSwitcher
+        android:id="@+id/m1401_c001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/ring"
+        android:contentDescription="@string/m1401_s002"
+        android:gravity="center"
+        android:text="@string/m1401_b001"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/fontsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/m1401_b002"
+        app:srcCompat="@drawable/scissors"
+        tools:ignore="ImageContrastCheck">
+
+    </ImageSwitcher>
+
+    <ImageButton
+        android:id="@+id/m1401_b001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/circle_shape"
+        android:contentDescription="@string/m1401_b001"
+        android:src="@drawable/scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_t003"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/m1401_btnResult"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnShowResultLis"
+        android:text="@string/m1401_show"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/m1401_t002"
+        app:layout_constraintTop_toTopOf="@+id/m1401_b003"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/m1401_btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onOK"
+        android:text="@string/m1401_btnok"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/m1401_t002"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_btnResult"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/m1401_btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCancel"
+        android:text="@string/m1401_cancel"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/m1401_btnResult"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_btnResult"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/m1401_b002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/circle_shape"
+        android:contentDescription="@string/m1401_b002"
+        android:src="@drawable/stone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_b001"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/m1401_b003"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle_shape"
+        android:contentDescription="@string/m1401_b003"
+        android:src="@drawable/net"
+        app:layout_constraintStart_toStartOf="@+id/m1401_b002"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_b002"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/m1401_s001"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/Silver"
+        android:text="@string/m1401_s001"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/m1401_t003"
+        app:layout_constraintStart_toStartOf="@id/m1401_t002"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_b003"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/m1401_f000"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"
+        android:text="@string/m1401_f000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/m1401_s001"
+        app:layout_constraintStart_toStartOf="@id/m1401_s001"
+        app:layout_constraintTop_toBottomOf="@+id/m1401_s001" />
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/myname"
+        android:textColor="@color/Yellow"
+        android:textSize="@dimen/fontsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

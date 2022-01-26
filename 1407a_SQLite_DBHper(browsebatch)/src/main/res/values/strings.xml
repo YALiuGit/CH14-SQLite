@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">14.7a SQLite DBHper(browse batch)</string>
+    <string name="myname">03劉祐安</string>
+    <string name="action_settings">結束</string>
+    <string name="noback">禁用返回鍵</string>
+    <string name="blank">空白</string>
+    <string name="m_batch">批次新增</string>
+</resources>

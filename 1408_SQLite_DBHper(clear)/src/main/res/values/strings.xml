@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">14.8 SQLite DBHper(clear)</string>
+    <string name="myname">03劉祐安</string>
+    <string name="action_settings">結束</string>
+    <string name="noback">禁用返回鍵</string>
+    <string name="blank">空白</string>
+    <string name="m_batch">批次新增</string>
+    <string name="m_clear">清空所有資料</string>
+    <string name="m_nofound">施工中</string>
+    <string name="m_message">資料刪除無法復原\n確定將所有資料刪除嗎?</string>
+    <string name="m_btn_ok">確定清空</string>
+    <string name="m_btn_cancel">取消清空</string>
+    <string name="msg1">資料表已空 !共刪除</string>
+    <string name="msg2">放棄刪除所有資料 !</string>
+</resources>
